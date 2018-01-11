@@ -1,0 +1,11 @@
+@function calculateRem($sizeValue) {
+  $remSize: $sizeValue / 16px;
+@return #{$remSize}rem;
+}
+
+@mixin heightSize($size) {
+  height: $size;
+  height: calculateRem($size);
+}
+
+

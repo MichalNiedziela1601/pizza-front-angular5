@@ -1,0 +1,8 @@
+@import "mixins";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+.stick {
+  position: fixed;
+  top: 0;
+}

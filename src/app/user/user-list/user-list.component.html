@@ -1,0 +1,37 @@
+<section class="row">
+  <div class="col">
+    <header class="header">
+      <h2>Users</h2>
+    </header>
+  </div>
+</section>
+<section>
+  <div>
+    <button class="btn btn-success">Add user</button>
+  </div>
+  <table class="table table-striped">
+
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>E-mail</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td><a [routerLink]="['/user/edit',user.id]">{{user.id}}</a></td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>
+        <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+
+  </table>
+</section>

@@ -1,0 +1,109 @@
+@import "~sass/mixins";
+@import "~sass/variables";
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.background-section {
+  background-image: url('../../assets/img/home/bg_header2.jpg');
+  background-repeat: repeat-x;
+  @include heightSize(219px);
+  background-position: center center;
+  overflow: hidden;
+  background-size: cover;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.sticky-navbar {
+  background: $red;
+  z-index: 9999 !important;
+  margin: 0 auto;
+  min-height: 50px;
+  border-top: 1px solid $white;
+  padding: 0;
+}
+
+.stick {
+  width: 100%;
+  border-top: none;
+}
+
+.nav-link {
+  color: $white !important;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  padding: 15px;
+  font-weight: 600;
+  transition: all .2s linear;
+
+  @media screen and (max-width: 888px) {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    color: $light-grey !important;
+  }
+}
+
+
+.navbar-collapse {
+  justify-content: center !important;
+}
+
+.order-contact {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  padding: 15px;
+  font-weight: 600;
+  color: black !important;
+  background-color: $white;
+  margin-left: 15px;
+  transition: all .2s linear;
+
+  @media screen and (max-width: 888px) {
+    font-size: 1.4rem;
+  }
+  &:hover {
+    color: #3e3e3e !important;
+  }
+
+}
+
+#liSubmenu {
+  &:hover {
+    .submenu {
+      display: flex;
+    }
+  }
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  justify-content: center;
+  left: 0;
+  top: 90%;
+  z-index: 10000;
+  background-color: #fff;
+
+  .list-inline-item {
+    a {
+      color: black !important;
+      transition: all .2s linear;
+    }
+
+    &:hover {
+      a {
+        color: #878787 !important;
+      }
+    }
+  }
+
+
+}

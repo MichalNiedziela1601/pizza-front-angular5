@@ -1,0 +1,11 @@
+@import "~sass/mixins";
+.top-home {
+
+  @include heightSize(340px);
+  overflow: hidden;
+
+  img {
+    vertical-align: top;
+  }
+
+}
