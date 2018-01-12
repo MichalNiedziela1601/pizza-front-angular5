@@ -1,0 +1,86 @@
+.home-component {
+
+  #offer {
+    padding: 40px 15px;
+    .header {
+      margin: 30px auto;
+
+      h2 {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Bowlby One SC', cursive;
+      }
+    }
+
+    .offer-box {
+      max-width: 360px;
+      height: 340px;
+      border: 1px solid lightgray;
+      border-radius: 15px;
+      position: relative;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url('../../assets/img/home/bg_box_offer.jpg');
+      background-position: center center;
+
+
+      .offer-box-img {
+        position: relative;
+        top: -40px;
+        left: 0;
+        z-index: 10;
+
+        &:hover {
+          animation: shake .82s cubic-bezier(.36,.07,.19,.97) both;
+          transform: translate3d(0,0,0);
+        }
+
+        @keyframes shake {
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+
+          20%, 80% {
+            transform: translate3d(2px, 0, 0);
+          }
+
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+
+          40%, 60% {
+            transform: translate3d(4px, 0, 0);
+          }
+        }
+
+
+      }
+
+      .box-second-border {
+        position: absolute;
+        width: 90%;
+        border: 2px dashed white;
+        height: 80%;
+        border-radius: 20%;
+        left: 5%;
+        top: 10%;
+
+        h2 {
+          font-weight: 500;
+          text-transform: uppercase;
+          font-family: 'Bowlby One SC', cursive;
+          font-size: 3rem;
+          color: white;
+          position: absolute;
+          top: 50%;
+          display: block;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
