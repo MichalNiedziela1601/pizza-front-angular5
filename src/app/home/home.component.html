@@ -1,0 +1,21 @@
+<div class="home-component">
+  <app-top></app-top>
+  <section id="offer">
+    <div class="container">
+      <div class="row">
+        <header class="header">
+          <h2>Explore our offer</h2></header>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4" *ngFor="let box of boxOffers">
+          <div class="offer-box" >
+            <img src="{{box.src}}" class="offer-box-img img-fluid">
+            <div class="box-second-border">
+              <h2>{{box.title}}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
