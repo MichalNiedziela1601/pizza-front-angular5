@@ -4,8 +4,7 @@
   @include heightSize(340px);
   overflow: hidden;
 
-  img {
-    vertical-align: top;
+  .carousel-caption {
+    background-color: rgba(0,0,0,0.5);
   }
-
 }
